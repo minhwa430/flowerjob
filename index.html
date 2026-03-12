@@ -19,6 +19,26 @@
     button {background:white; color:#ff6fa1; border:none; padding:12px 20px; border-radius:30px; font-weight:bold; cursor:pointer;}
     input, textarea, select {width:100%; padding:10px; margin-top:6px; margin-bottom:16px; border:1px solid #ccc; border-radius:8px;}
     form label {font-weight:bold;}
+
+ /* 반응형 구글 폼 컨테이너 */
+    .form-container {
+      position: relative;
+      width: 100%;
+      max-width: 640px;   /* 데스크탑에서는 최대 640px */
+      margin: 0 auto;     /* 가운데 정렬 */
+    }
+    .form-container iframe {
+      width: 100%;        /* 화면 크기에 맞게 자동 조정 */
+      height: 800px;
+      border: none;
+    }
+    @media (max-width: 480px) {
+      .form-container iframe {
+        height: 600px; /* 모바일에서는 높이를 조금 줄임 */
+      }
+    }
+
+
   </style>
 </head>
 <body>
@@ -36,7 +56,8 @@
  <section id="about">
   <h2>취업꽃길 소개</h2>
   <div class="card">
-    <img src="images/1.png" alt="소개 이미지" style="width:30%; border-radius:12px; margin-bottom:12px;">
+    <img src="images/1.jpg"
+style="width:60%; border-radius:12px; margin-bottom:20px;">
     <p>
       취업꽃길은 취업 준비생을 위한 자소서 컨설팅과 면접 컨설팅을 제공합니다.
     <br>
@@ -160,18 +181,28 @@
 
         <button type="submit">신청하기</button>
       </form>
+
+
+ <!-- 구글 폼 반응형 삽입 -->
+      <div class="form-container">
+     <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSchsNBaBuZKgkkmJl_PlMkQKzcwfCwlhZ6BPQImvA1Qi7ChFg/viewform?embedded=true" width="640" height="1371" frameborder="0" marginheight="0" marginwidth="0">로드 중…
+	</iframe>
+      </div>
     </div>
   </section>
 
+<div style="text-align:center; margin-top:20px;">
+  <a href="http://pf.kakao.com/_keUWG" target="_blank" 
+     style="display:inline-block; background:#ff6fa1; color:white; padding:12px 24px; border-radius:30px; text-decoration:none; font-weight:bold;">
+    카카오톡 예약 문의
+  </a>
+</div>
+
+
 
   <footer>
-    © 2026 취업꽃길 | 자소서 · 면접 컨설팅
+    © 미놔 취업꽃길 | 자소서 · 면접 컨설팅
   </footer>
 </body>
 </html>
-
-
-
-
-
 
