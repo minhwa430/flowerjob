@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>취업꽃길 | 자소서 · 면접 컨설팅</title>
+  <style>
+    body {font-family: Arial, sans-serif; margin:0; background:#fffafc; color:#333;}
+    header {background:#ff6fa1; color:white; padding:40px 20px; text-align:center;}
+    header h1 {margin:0; font-size:36px;}
+    nav {background:#fff; border-bottom:1px solid #eee; display:flex; justify-content:center; gap:30px; padding:12px;}
+    nav a {text-decoration:none; color:#333; font-weight:bold;}
+    section {max-width:1000px; margin:auto; padding:60px 20px;}
+    .card {background:white; border-radius:16px; box-shadow:0 6px 18px rgba(0,0,0,0.08); padding:30px; margin-top:20px;}
+    .services {display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:20px;}
+    .service {padding:20px; border:1px solid #eee; border-radius:12px;}
+    .cta {background:#ff6fa1; color:white; text-align:center; padding:40px; border-radius:16px; margin-top:40px;}
+    footer {text-align:center; padding:30px; background:#fafafa; margin-top:60px; font-size:14px; color:#777;}
+    button {background:white; color:#ff6fa1; border:none; padding:12px 20px; border-radius:30px; font-weight:bold; cursor:pointer;}
+    input, textarea, select {width:100%; padding:10px; margin-top:6px; margin-bottom:16px; border:1px solid #ccc; border-radius:8px;}
+    form label {font-weight:bold;}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>취업꽃길</h1>
+    <p>자소서 · 면접 컨설팅으로 당신의 취업에 꽃길을 만들어드립니다</p>
+  </header>
+  <nav>
+    <a href="#about">소개</a>
+    <a href="#services">컨설팅</a>
+    <a href="#process">진행방법</a>
+    <a href="#contact">접수</a>
+  </nav>
+
+  <section id="about">
+    <h2>취업꽃길 소개</h2>
+    <div class="card">
+      <p>
+        취업꽃길은 취업 준비생을 위한 자소서 컨설팅과 면접 컨설팅을 제공합니다. 
+        지원자의 경험을 강점으로 바꾸고, 기업이 원하는 방향으로 전략을 세워드립니다. 
+        단순한 첨삭을 넘어, 지원자의 이야기를 설득력 있게 전달할 수 있도록 돕습니다.
+      </p>
+    </div>
+  </section>
+
+  <section id="services">
+    <h2>컨설팅 서비스</h2>
+    <div class="services">
+      <div class="service">
+        <h3>자소서 컨설팅</h3>
+        <p>지원자의 경험을 분석하고, 기업 맞춤형 스토리라인을 구성합니다.</p>
+      </div>
+      <div class="service">
+        <h3>면접 컨설팅</h3>
+        <p>실전 모의 면접과 피드백을 통해 자신감을 높여드립니다.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="process">
+    <h2>진행 방법</h2>
+    <div class="card">
+      <ol>
+        <li>상담 신청</li>
+        <li>컨설팅 일정 조율</li>
+        <li>자소서/면접 컨설팅 진행</li>
+        <li>피드백 및 최종 점검</li>
+      </ol>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>컨설팅 접수하기</h2>
+    <div class="card">
+      <form action="https://formspree.io/f/yourFormID" method="POST">
+        <label for="name">이름</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">이메일</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="service">희망 컨설팅</label>
+        <select id="service" name="service" required>
+          <option value="자소서">자소서 컨설팅</option>
+          <option value="면접">면접 컨설팅</option>
+        </select>
+
+        <label for="message">상담 내용</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit">신청하기</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    © 2026 취업꽃길 | 자소서 · 면접 컨설팅
+  </footer>
+</body>
+</html>
